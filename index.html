@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Keerki</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+          <div class="Header">
+        <Nav class="Nav-bar">
+            
+            <div class="Header-buttons">
+                <div class="Main-header-btns">
+                    <div class="Sign-in-div">
+                <button class="btn-primary" id="Sign-in">sign in</button>
+            </div>
+                <button class="btn-secondary" id="Sign-up">Sign Up</button>
+            </div>
+            </div>
+            <div class="Header-menu">
+                <ul>
+                    <li id="One">Homepage</li>
+                    <li id="Two">the product</li>
+                    <li id="Three">Around</li>
+                    <li id="Four">Call</li>
+                </ul>
+            </div>
+            <div class="Language">
+                <div class="Dropdown">
+                    <div class="Language-pic">
+                        <div class="Language-pic-inner" style="display: flex;">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAAB4BAMAAABMVwCiAAAAElBMVEUAl1E3rXdmwJal2sLX7+T8//tTsZW4AAAEFklEQVRo3u2YS2/jOBCEm6J0l2PzLj94px+8S455Fx/9///KVCtZIJfZQ5iZxQKsAE6ggz52s7pIh6ipqampqampqamp6Y+pG0nRRPj4WakFrzzuaCeMI+2Jhv2sF+O6iUb8AKmpp36kroqTyY/8JB6JTKY7Poc4sC19VJmeFMFdrLMzDa4GcyE7+adivORwGi8qX/pk2POrkFelK8AUu9pIJtVg3sjenYm8omnxRD3vdBryGzNPw45PPNHAPtt8MlzVtYd9RJsZaz3EO1mmLnWZwpPnvuM7z6RRm2U/gPhtB0wd21c2OWRSYXxRACZTIVN46RSquRKepaGYmqYp1wumT34im8hTCYLxY8eyW6zEGj2nPvWXXIFZB3tIWWXrNJri3xIw2Hx38ux2I5N0SnHSSe9LBSYe7D4WCtbtr2cyrzU4w0e0qefltYQxTNQtNuvc6QoLqHS2+8zOm5nofex59syB+TIrnsPsJ++6fdKMCrsap5V3+4B52cDQfoYLDOeOC8LGR4Xm2XlgTNWVadum7ypkK5TSrx9B1nXB0Xk6Ig2wF9aZtcf2cOJRVRiabDRcOnY6fiSncaR28BbCBa+1s1kVtkeGlWowSEYWC3UyFTcbkSr9a/KcgVmBGSLpT0yY6sK/YGS6svZL8mXIKGUMvuBXJrRM8Fd+YIpCVXburxhCPnPyHG3Zw08jhQcwmUezagmhNdyA8a6qZ4l1CuIDXnXe/ITgTISH87AiEnQZg/NzFUahNdxvmCKNkR3A6OBPnUwcoqTobQpOkqgCg0AcuQcj32Us/IhRAQWBiXyRs63QU68e0TDiaPu2bkRLQODHvJ3TfrI3MI+73W6PMi+CwTkkmLkGI3nzwtKXTA9pIVLgU/dM9j2SREwSTDKVmCem9AYjT+MBBw2/PjAao5Mjdgv1ejckrqvmlHFrYbRIvx1DlFOHZHcKMN2GOUwuuGENvgIzEsZD+Twk6novXpNjFJQrMPSMR3gPLGBMDcYBU5gXLzclmBvpjNC8IzoFo+P1hSc7XD+crsB0TklE40WzFOHIlvBpKZl/My/PHqvgcaCaudFOFRXKhLHAVC4oZjZFwutKeoXxpudktyBVVZj+SnK1QOLIviNQWC4bcF1UCGZb4PKAMt1ebPL9hN5C/47zc9KcfQmMLTowR/UKI+Aw3vt20zAbsyI4P+bxqnCPlsyRxDnDW2dZPtYvx4Es53nhWDGb76Q83Et7eAsemP6xuVSAvSKxs4TQ42MFNdp9maKvSzhtn59l32opTU1NTU1NTU3/uaa/Qunyz71L3e+n00m+cH7VdjFTP4jZvp79Vq9X3f83vpQT+F+Vfqpt5/tvtGHyn7YA9uaNfPnjVvs71ZB40MaWH01NTU1NTU1NTU3/U/0CwfoBOVVMtu0AAAAASUVORK5CYII="
+                        width="24" height="24" class="rounded-circle">
+                    </div>
+                    </div>
+                    <div class="Major">
+                        <button class="dropbtn">language <i class="fas fa-caret-down fa-xs" style="vertical-align: 2px;"></i></button>
+                    </div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#"></a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAAB4CAMAAACJp+2jAAAAPFBMVEUAJH0VN4nSCisrSpTTJDlIZKPaRljhYXBug7SAkr/leofolJ+er9HwsbjCyt/209jh4+/65ef98PD9//xEFj2rAAAEbklEQVR42u3c6ZaiMBAF4EKkDW5IeP93bVd0SIrUFrSd8Gu65zTwsV6SSmB4XdoKDBZ3W5lfRRd/+19nsaWqve94t7msGobBnLMU5kn5ua16irHgLIOZnJU4Zji5v4Bxp9t6+s1z1RGMmrMAZqRsX1cdxSg52TFPynpFwJw5zadimjvFTyhnzHqHcY7NJ2Ka4333dlPKtofVypyTEfOg+AhlGODyj58Dyqk/CVOjZ2XTXX4Ntx9wzr76FEy1v+/S4SdKGTFnTody6k/A1CjluecQ+6Xy7GTA4Gfl9ZqC2OkKFs/imGOqvf83hEUpE8yZ02NnhxHZjDFBnkQoZ8zkubDeohz3Hsx9bZPksoq9UiB4Yq+3ftBlHEtMLE/eKeFuQiQWaDl2GCyERSlXTPQMekVks8KgIQw72kC+IOkcG8wMBbutofXT77UkJ5VxLDD1bAiLvz/ay5MP40gjmx6TCmFRSsV8kNM4WoyA8voapKUFamTTYSghLJG3DFZhgjE6rHUyYVM5csxI6dRXyMy1yopsUozxvdvwH4gRjgwTadRLvyQa2Uc2I+OIMKwQRm6iYIeIgCPAxBv11MGKH+8CDhvj1MeP3/pJjWxMTJOVct0hL78bWRjBM8ezW3bwh8vMc7LhYhpBcnGSPhfxY5+MUYYwq2a32RcyEWOZoLQcfIMtBdNKDpS2U09y/CgYy5hu01zdKzFGH1BmfSIKTEDJ0FfEjGy9EGOXJ1/ejsRl/3hPH7aT5eAlmC5YDZot9tR9hCHbQnoAmC4FUzAF8z9jfLalj2P6fFuE1RctBVMwBVMwBVMwBVMwBVMwBVMwBVMwBVMwfw/zVU1NpUWzYAqmYL4DQ+38PGI7EfbYdiIM2vHrj+QOWl4BWkjBi8S4Zwbvlj85yyqAE3X7r1UO/MsMPzKnJjclUbAhuWfC0kNTzlhqkqY8isQ8BePJnEdhqLrkpEYpaF26b2klWi3GwetQVMVADMpYr9VW1OK5sdJwCc5YaRZuDK2supa3kcsaK8kWak0NIH9DjIJT/IAd5g+YEWWTPGasUmAOp5Nw8Ku5p1zNzCJt4Z2pptAem+zyecHjn8hBkws+NGDyBhAMbEA5Hi0MJWQcQQgL3s2iISeCyJTguBM9BHp0jcKRTZLj6CzzZHRt4jFnFpeFPIQ569GAziSyNfwQhg6XUA1tdIKM01iEsCyDTpWRzTpTaIcDK5KUOE9mHKgt5eCfFeifLTmEnnG1+BbI1+eB/ElhM7mB4D4Gbp5cctoJLgc0ISz7hCDMdx8Q3rY7ZgOJ5VQtrFQCKcozuZAbR2wn0aFz1mCTULPO1USObEBq1OO1j9rPokX8xgLKV517/5RgjvL1C4bf21kna6NENjBtCVlmGj2UA8ZtVFknOExFNjBvPcw69eR8wAf8I0E8/DbrpKBzHMjQ4p55ulY8gUKGvpDsE+likQ0ydOssMMVxnAMZOtwWmXw6FtkgQ8/uQnOchxkHNCHsvZiQA+vzkmjU+1jMtNHwF5KPuLPnEK49AAAAAElFTkSuQmCC"
+                            width="24" height="24" class="rounded-circle">
+                        English</a>
+                        <a href="#"></a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAAB4BAMAAABMVwCiAAAAElBMVEUAl1E3rXdmwJal2sLX7+T8//tTsZW4AAAEFklEQVRo3u2YS2/jOBCEm6J0l2PzLj94px+8S455Fx/9///KVCtZIJfZQ5iZxQKsAE6ggz52s7pIh6ipqampqampqamp6Y+pG0nRRPj4WakFrzzuaCeMI+2Jhv2sF+O6iUb8AKmpp36kroqTyY/8JB6JTKY7Poc4sC19VJmeFMFdrLMzDa4GcyE7+adivORwGi8qX/pk2POrkFelK8AUu9pIJtVg3sjenYm8omnxRD3vdBryGzNPw45PPNHAPtt8MlzVtYd9RJsZaz3EO1mmLnWZwpPnvuM7z6RRm2U/gPhtB0wd21c2OWRSYXxRACZTIVN46RSquRKepaGYmqYp1wumT34im8hTCYLxY8eyW6zEGj2nPvWXXIFZB3tIWWXrNJri3xIw2Hx38ux2I5N0SnHSSe9LBSYe7D4WCtbtr2cyrzU4w0e0qefltYQxTNQtNuvc6QoLqHS2+8zOm5nofex59syB+TIrnsPsJ++6fdKMCrsap5V3+4B52cDQfoYLDOeOC8LGR4Xm2XlgTNWVadum7ypkK5TSrx9B1nXB0Xk6Ig2wF9aZtcf2cOJRVRiabDRcOnY6fiSncaR28BbCBa+1s1kVtkeGlWowSEYWC3UyFTcbkSr9a/KcgVmBGSLpT0yY6sK/YGS6svZL8mXIKGUMvuBXJrRM8Fd+YIpCVXburxhCPnPyHG3Zw08jhQcwmUezagmhNdyA8a6qZ4l1CuIDXnXe/ITgTISH87AiEnQZg/NzFUahNdxvmCKNkR3A6OBPnUwcoqTobQpOkqgCg0AcuQcj32Us/IhRAQWBiXyRs63QU68e0TDiaPu2bkRLQODHvJ3TfrI3MI+73W6PMi+CwTkkmLkGI3nzwtKXTA9pIVLgU/dM9j2SREwSTDKVmCem9AYjT+MBBw2/PjAao5Mjdgv1ejckrqvmlHFrYbRIvx1DlFOHZHcKMN2GOUwuuGENvgIzEsZD+Twk6novXpNjFJQrMPSMR3gPLGBMDcYBU5gXLzclmBvpjNC8IzoFo+P1hSc7XD+crsB0TklE40WzFOHIlvBpKZl/My/PHqvgcaCaudFOFRXKhLHAVC4oZjZFwutKeoXxpudktyBVVZj+SnK1QOLIviNQWC4bcF1UCGZb4PKAMt1ebPL9hN5C/47zc9KcfQmMLTowR/UKI+Aw3vt20zAbsyI4P+bxqnCPlsyRxDnDW2dZPtYvx4Es53nhWDGb76Q83Et7eAsemP6xuVSAvSKxs4TQ42MFNdp9maKvSzhtn59l32opTU1NTU1NTU3/uaa/Qunyz71L3e+n00m+cH7VdjFTP4jZvp79Vq9X3f83vpQT+F+Vfqpt5/tvtGHyn7YA9uaNfPnjVvs71ZB40MaWH01NTU1NTU1NTU3/U/0CwfoBOVVMtu0AAAAASUVORK5CYII="
+                            width="24" height="24" class="rounded-circle">
+                        Arabic</a>
+                        <a href="#"></a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAAB4BAMAAABMVwCiAAAAGFBMVEXmJw7qSAntXQjwdwP2mAD5tgD7xQD/3AIAip+EAAABpUlEQVRo3u2YzWvCQBDFNzax11DSeg0o7TWlSK5CC7lqpXi1RczVrzj/ftX4kc0GCjIzUHm/gyYR8tyZNzObGAMA+Kf4sbyG92rSUGEt2TtphKxDKjJ3RBuRqHnWXdtE9CPy/5Pq2YS2Mk4LhlU3j3sboaQv7RgKyaRr+/xNRmZS1CwhU/dEoU6hJO5FduWAaOjKrEyfvbssGyLZXzMbjajhjkRTZqMRFc7F56aEXZn7jwO7HkblUVJVoW+20UIW1erv5rTlMlsrr6rYHTMddQeMXr5gu5p1UqcXlZrbItZGcw5bPRO8jc0/yQyMKGljyPj3fiqLMfelzEJY5qWUWUlvMt0OIMHJaU6HYFVp7Xvk0+4jFn0s8A/xylyrtQfMRksO24H6EOsseI022n891qwWfeXb8hcmox3LP7Wt5k14zTc/Zro1d3KWMBrtPGSC8O/N2/WD4HJoy/hFNjXytBPvU0HmQWrHfqsEChpebDKNtcxv6i3HfjTECgbYzTiFysyk3nLYPXPWKzQMbcxMpzwjHRn0TAAAAAAAAAAAAAAAAABAmV9TNnbiNeuBaAAAAABJRU5ErkJggg=="
+                            width="24" height="24" class="rounded-circle">
+                        中国人</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="Main-logo" style="width: 165px; display: flex; justify-content: right;">
+            <div class="Logo" style="height: 51.5px;">
+                <img src="/Pictures/Logo1.png" alt="Logo" width="164" height="51.34">
+            </div>
+        </div>
+        </Nav>
+    </div> 
+    <div class="Main-heading" id="Heading">
+        <div class="Main-heading-sec-div">
+        <h1>American challenge that Jordan fears</h1>
+       </div>
+    </div> 
+    <div class="Sub-heading">
+        <p class="First-para">The American challenge that Jordan fears cooperating in with its arms as interests and <br> expresses</p>
+    </div>
+    <div class="front-buttons">
+      <div class="Sub-front-btn">
+          <div class="Try-btn-div">
+        <button class="btn-try-free" id="Try-free">Try for free!</button>
+        </div>
+        <button class="btn-Catalog" id="Catalog">catalogs</button>
+       </div>
+    </div>
+    <div class="container">
+        <img class="container-img" src="/Pictures/Containers.png" alt="Containers" />
+    </div>
+
+    <div class="Services">
+        <h2>Our services</h2>
+    </div>
+<div class="Services-txt">
+    <div class="Sub-service-txt">
+        <p>
+            The American challenge which Jordan fears cooperate in with its arms as
+            interests and expresses The American challenge which Jordan fears
+            cooperate in with its arms as interests and expresses
+        </p>
+    </div>
+    </div>
+
+    <div class="Cards">
+      <div class="Sub-cards">
+        <div class="Product">
+            <div class="Svg-1" style="height: 66px; display: flex; justify-content: center; width: 100%; align-items: center; text-align: center;">
+                <div class="Svg-1-inner-div">
+            <svg data-v-55bb9c18="" width="59" height="59" viewBox="0 0 59 59" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path data-v-55bb9c18=""
+                    d="M46.4167 7.75H12.5833C9.91396 7.75 7.75 9.91396 7.75 12.5833V46.4167C7.75 49.086 9.91396 51.25 12.5833 51.25H46.4167C49.086 51.25 51.25 49.086 51.25 46.4167V12.5833C51.25 9.91396 49.086 7.75 46.4167 7.75Z"
+                    stroke="#FFDA90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path data-v-55bb9c18="" d="M24.6667 17.4167H17.4167V39.1667H24.6667V17.4167Z" stroke="#FFDA90"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path data-v-55bb9c18="" d="M41.5833 17.4167H34.3333V29.5H41.5833V17.4167Z" stroke="#FFDA90"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </div>
+        </div>
+        <div class="Card-para-1" style="display: flex; justify-content: center;">
+            <p style="font-size: 24.45px; text-align: center; line-height: 1.5; letter-spacing: -0.3px;">
+                products</p>
+            </div>
+        </div>
+        <div class="Consultation">
+            <div class="Svg-2" style="height: 67px; display: flex; justify-content: center; width: 100%; align-items: center; text-align: center;">
+                <div class="Svg-2-inner-div">
+            <svg data-v-55bb9c18="" width="62" height="62" viewBox="0 0 62 62" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path data-v-55bb9c18=""
+                    d="M41.3334 54.25V49.0833C41.3334 46.3428 40.2447 43.7144 38.3068 41.7766C36.3689 39.8387 33.7406 38.75 31 38.75H12.9167C10.1761 38.75 7.54781 39.8387 5.60994 41.7766C3.67206 43.7144 2.58337 46.3428 2.58337 49.0833V54.25"
+                    stroke="#FFDA90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path data-v-55bb9c18=""
+                    d="M21.9583 28.4167C27.6653 28.4167 32.2917 23.7903 32.2917 18.0833C32.2917 12.3764 27.6653 7.75 21.9583 7.75C16.2514 7.75 11.625 12.3764 11.625 18.0833C11.625 23.7903 16.2514 28.4167 21.9583 28.4167Z"
+                    stroke="#FFDA90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path data-v-55bb9c18="" d="M43.9166 28.4167L49.0833 33.5833L59.4166 23.25" stroke="#FFDA90"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </div>
+        </div>
+        <div class="Card-para-2">
+            <p style="font-size: 24.45px; text-align: center; line-height: 1.5;">
+                Consultation</p>
+            </div>
+        </div>
+        <div class="Information">
+            <div class="Svg-3" style="height: 60px; display: flex; justify-content: center; width: 100%; align-items: center; text-align: center;">
+                <div class="Svg-3-inner-div">
+            <svg data-v-55bb9c18="" width="47" height="48" viewBox="0 0 47 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg" >
+                <path data-v-55bb9c18=""
+                    d="M23.5 43.5833C34.3155 43.5833 43.0833 34.8156 43.0833 24C43.0833 13.1844 34.3155 4.41666 23.5 4.41666C12.6844 4.41666 3.91663 13.1844 3.91663 24C3.91663 34.8156 12.6844 43.5833 23.5 43.5833Z"
+                    stroke="#FFDA91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path data-v-55bb9c18="" d="M23.5 16.1667V24" stroke="#FFDA91" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                <path data-v-55bb9c18="" d="M23.5 31.8333H23.5196" stroke="#FFDA91" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+            </svg>
+        </div>
+        </div>
+        <div class="Card-para-3">
+            <p
+                style="font-size: 24.45px; text-align: center; line-height: 1.5;">
+                informations</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="Gallery">
+        <h2>Gallery</h2>
+    </div>
+    <div class="Gallery-txt">
+      <div class="Sub-Gallery">
+        <p>
+            We focus on the work environment and meet you at your workplace. It's
+            just a keystroke.
+        </p>
+      </div>
+    </div>
+
+    <div class="Pictures">
+      <div class="Sub-pictures">
+
+        <div class="Pic" id="Pic-1">
+            <img src="/Pictures/1.png" alt="Style" />
+        </div>
+        <div class="Pic" id="Pic-2">
+            <img src="/Pictures/2.png" alt="Mobile" />
+        </div>
+        <div class="Pic" id="Pic-3">
+            <img src="/Pictures/3.png" alt="Meeeting" />
+        </div>
+        <div class="Pic" id="Pic-4">
+            <img src="/Pictures/4.png" alt="LCD" />
+        </div>
+
+      </div>
+    </div>
+    <div class="Pictures2">
+      <div class="Sub-pictures-2">
+        <div class="Pic2" id="Pic-5">
+            <img src="/Pictures/5.png" alt="Ship" style="width: 350px; height: 285px; object-fit: cover;" />
+        </div>
+        <div class="Pic2" id="Pic-6">
+            <img src="/Pictures/6.png" alt="Laptop" style="width: 225px; height: 285px;" />
+        </div>
+        <div class="Pic2" id="Pic-7">
+            <img src="/Pictures/7.png" alt="Camera" style="width: 350px; height: 285px; object-fit: cover;" />
+        </div>
+      </div>
+    </div>
+    <div class="See-more-btn">
+        <button class="See-more" id="More">see more</button>
+    </div>
+    <div class="Our-partners">
+        <h2>our partners</h2>
+    </div>
+    <div class="Partner-txt">
+        <p>
+            We focus on the work environment and meet you at your workplace. It's
+            just a keystroke
+        </p>
+    </div>
+
+    <div class="Partner-logo">
+      <div class="Sub-partner-logo">
+        <div class="Partner" id="Partner-1">
+            <img src="/Pictures/B1.png" alt="Partner-1" style="width: 61px; height: 61px;" />
+        </div>
+        <div class="Partner" id="Partner-2">
+            <img src="/Pictures/B2.png" alt="Partner-2" style="width: 61px; height: 62px;" />
+        </div>
+        <div class="Partner" id="Partner-3">
+            <img src="data:image/png;base64,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"
+                style="width: 61px; height: 71px;">
+        </div>
+        <div class="Partner" id="Partner-4">
+            <img src="data:image/png;base64,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"
+                style="width: 73px; height: 61px;">
+        </div>
+        <div class="Partner" id="Partner-5">
+            <img src="data:image/png;base64,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"
+                style="width: 61px; height: 66px;">
+        </div>
+        <div class="Partner" id="Partner-6">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAAA9CAYAAACgGPvxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUkSURBVHgB7Z3fYZtIEId/i/R+vvc7m6vgfBUIVXBJBWdXEFzBxRWIDqJUkLgCoaQA2xUEOymAAiI2sxJKiP7uiF1WduZ7sWWBWIYRLB+za/VHOkl6iP5Hh2jou8csuVq+jtPJiUb0DoHRwD0UbiNdTYtsWICJ71hqhfHjaPAWDqCYn1PMR/CEQnXVV7Qd+j1Bh6j1P5103YZNKNMGbZIswlk6zbkH03cslZ7/cJJcFaJUeWzrVzqmEYRtJHQwx5Rkt/Qtj3EcJOYsDwdQYv0Lz0hy7cdcPj6dph877TpsowJStOTPdHKBxdXCK/0ekM9QXaJbytXXVfdtYFLN+4bUFyu3LdFFLGkbBVpiPsN3O/sO2ikIgiAIzwglnutwyOW8bPbBuowl9Zmuv2TDnLOOb7fVRDxXS+o7t9fL113GMjLCl24gOOv4dltNxHO1RCF6hUDQtv8DE0qsATpEkqsdJwEF64m5DNsuHC+WjdEh4rla0vv5905j2V+P4y46jbF4LkEQBEH4CWWz0Fk6nYCBRjV9zIav4ZDTq+krpfGCs85DNhhylj9NpxkF5G/OOtx95cbShlXf1sSXQ6RtXu6reevDjgQsVAHX6OofurlN4JE6sRLwuGcun8Ax5Nsu6Ee26b0Z8CIK5BBFRbQkUtEtAkPOa2ttVnSAD3OFJFdbdDVFeDYWEdYOLkEgrC6LXD/S8+A46FswJoeUwyPUj7ie8cqIy8/MWntfrqm3eITWmT/s8RybIAiCIPzqPGvP5QtNqiXC7GpXPf02fHiuJkvndYizY25HPJcPIqUvitHw0A5tAo/MVG9Ad4n3GghWDrREVAQTOitfF45GPVtScBaOtE5n/AS+gwdsz1wCFonl+nK/f5s6V1Ax7BMmIXEaw56C9uuGROw5HGOVXHR9ZT2jU348Fz3eqMYIR/mQDVt/ww+LpTYOy9cg1lLNnRXPIR4yl4YgCIIg/MLYeq5PYGA6iNTxbT1hRpPTNB9Rxzak5yprh1SgBW1iaWbcgcO+l+n/mf2pHSLreC3X3bWM7d1iDBbqNzhH/06fGyMgGtGEHNKwZYLFYPEjlnRAb7S7Qbd33/dDVxRb1h2mFeK5eMR1gsUIQw5H0BnRu6uT5OJjEuwNAlAshu/ncAAd+PfwjHiujmkbS7Woz4rRjrJ5aTe1cuK5BEEQBMErz9pzPWSDvzjLn6Uf3lHrOQ9wy9r3WJffuIhlPRbR1IWxnZeZy2J1Xi/xXJ14rvkD4pizxlfAJGPOWCUGi/VYmmSmJDUJza1kKDZOGCee6ziJ+AfYCWakEpiY8h10iCRXa5S3UuI9mPIfVjVsBd1lkaN4riZmHk8w+zHcfXUVS3NpNI+iwGjvtjlUxXMJgiAIgneUecJfO5NOaTqoUG1wQV3jNa+t97Ef+5yhzTYr6kt+zoZbH1Qf4rn2oRWyZYc+RnhiPE2KldcxnLLbGZqONTmvAjtGB/X2DR3z4bnoM0VFtELnh4y6do0pItz+7ryNBQIgydUCpdQYx8EYW5xXyDaay2LJdS8eOIY2cCmL0do4Ruf7YePRauf1cuObev9o6kM81z58uE5BEARBeMKI57Kn2DXfuyGE51rZ/vlyznkzusd20hTxXEHR7xX0paV2iOEU+9o4I3PJec0nLak4NWaePJdMobQTM32Rvi6Y/5E1JOaMZeal/3IEbZbkWkMXGvrGjOt7Skm1xLS7gvZQCcxHPNcPCizG87Ux7kE8VxPzhaC+F2seMV+e6xtwGWYboLZXzAAAAABJRU5ErkJggg=="
+                style="width: 151px; height: 61px;">
+        </div>
+      </div> 
+    </div>
+    <div class="All-partners">
+      <div class="Sub-all-partner-btn">
+        <button class="All-partner-btn" id="Partner-btn-one">all partners</button>
+      </div>
+    </div>
+    <div class="Customers">
+        <h2>customers</h2>
+    </div>
+<div class="Customer-main-div">
+    <div class="Customer-inner-div">
+    <div class="Customers-data">
+      <div class="Sub-customer-data">
+        <div class="Customer-one">
+        <div class="Customer-one-info-main">
+          <div class="Customer-one-info">
+              <div class="Img-1">
+            <img src="" alt="" style="width: 50px; height: 50px;"/>
+              </div>
+              <div class="Para-1">
+            <p style="line-height: 22px; text-align: left; line-height: 1.75;">Clair Bell<br><span>Designer</span></p>
+              </div>
+          </div>
+        </div>
+          <div class="Customer-one-txt">
+              <div class="Txt-1">
+            <p style="text-align: left; ">
+              Arms as interests and expresses The American challenge with which
+              Jordan's fears cooperate in with it Arms as interests and expresses
+            </p>
+              </div>
+          </div>
+        </div>
+        <div class="Customer-three">
+            <div class="For-upper">
+            <div class="Customer-three-info-main">
+          <div class="Customer-three-info">
+              <div class="Img-3">
+            <img
+              src=""
+              alt=""
+              style="width: 50px; height: 50px;"/>
+            </div>
+            <div class="Para-3">
+            <p style="line-height: 22px; text-align: left; line-height: 1.78;">Ralph Fisher<br><span>Designer</span>
+            </p>
+            </div>
+          </div>
+        </div>
+          <div class="Customer-three-txt">
+              <div class="Txt-3">
+            <p style="text-align: left;">
+              Arms as interests and expresses The American challenge with which
+              Jordan's fears cooperate in with it Arms as interests and expresses
+            </p>
+               </div>
+          </div>
+        </div>
+        </div>
+        <!-- <div class="Customer-two">
+            <div class="Customer-two-info-main">
+          <div class="Customer-two-info">
+              <div class="Img-2">
+            <img src="" alt="" style="width: 50px; height: 50px;"/>
+              </div>
+              <div class="Para-2">
+            <p style="line-height: 20px; text-align: left; line-height: 1.75;">
+              Franciso Lane<br><span>Designer</span>
+            </p>
+              </div>
+          </div>
+        </div>
+          <div class="Customer-two-txt">
+              <div class="Txt-2">
+            <p style="text-align: left">
+              Arms as interests and crosses the American challenge which Jordan
+              fears cooperate in with it arms as interests and crosses the
+              American challenge which Jordan fears cooperate in with it arms as
+              interests and crosses the American challenge with which Jordan fears
+              cooperate in with it arms as interests and crosses the arms as
+              interests and crosses the American challenge which Jordan fears
+              cooperate in with it arms as interests and crosses the
+            </p>
+              </div>
+          </div>
+          </div> -->
+        </div>
+      </div>
+  
+      <div class="Customer-data-second-row">
+        <div class="Sub-customer-data-second-row">
+
+        <!-- <div class="Customer-three">
+            <div class="For-upper">
+            <div class="Customer-three-info-main">
+          <div class="Customer-three-info">
+              <div class="Img-3">
+            <img
+              src=""
+              alt=""
+              style="width: 50px; height: 50px;"/>
+            </div>
+            <div class="Para-3">
+            <p style="line-height: 22px; text-align: left; line-height: 1.78;">Ralph Fisher<br><span>Designer</span>
+            </p>
+            </div>
+          </div>
+        </div>
+          <div class="Customer-three-txt">
+              <div class="Txt-3">
+            <p style="text-align: left;">
+              Arms as interests and expresses The American challenge with which
+              Jordan's fears cooperate in with it Arms as interests and expresses
+            </p>
+               </div>
+          </div>
+        </div>
+        </div> -->
+        <div class="Customer-two">
+            <div class="Customer-two-info-main">
+          <div class="Customer-two-info">
+              <div class="Img-2">
+            <img src="" alt="" style="width: 50px; height: 50px;"/>
+              </div>
+              <div class="Para-2">
+            <p style="line-height: 20px; text-align: left; line-height: 1.75;">
+              Franciso Lane<br><span>Designer</span>
+            </p>
+              </div>
+          </div>
+        </div>
+          <div class="Customer-two-txt">
+              <div class="Txt-2">
+            <p style="text-align: left">
+              Arms as interests and crosses the American challenge which Jordan
+              fears cooperate in with it arms as interests and crosses the
+              American challenge which Jordan fears cooperate in with it arms as
+              interests and crosses the American challenge with which Jordan fears
+              cooperate in with it arms as interests and crosses the arms as
+              interests and crosses the American challenge which Jordan fears
+              cooperate in with it arms as interests and crosses the
+            </p>
+              </div>
+          </div>
+          </div>
+        <div class="Customer-four">
+            <div class="Customer-four-info-main">
+          <div class="Customer-four-info">
+              <div class="Img-4">
+            <img src="" alt="" style="width: 50px; height: 50px;"/>
+              </div>
+              <div class="Para-4">
+            <p style="line-height: 22px; text-align: left; line-height: 1.76;">Jorge Murphy<br><span>Designer</span></p>
+              </div>
+          </div>
+           </div>
+          <div class="Customer-four-txt">
+              <div class="Txt-4">
+            <p style="text-align: left;">
+              Arms as interests and expresses The American challenge with which
+              Jordan's fears cooperate in with it Arms as interests and expresses
+            </p>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+      <div class="Container-offer">
+        <div class="Container-pic">
+          <img src="" alt="" style="width: 512px; height: 340px; background-color: #07689f; border-top-left-radius: 33px; border-bottom-left-radius: 33px"/>
+        </div>
+        <div class="Conatiner-data">
+            <div class="Container-para" style="display: flex; width: 100%; justify-content: center;">
+                <div class="Container-para-inners" style="display: flex; width: 80%;"> 
+          <p style="font-size: 40px; height: 124px; display: flex; margin: 0; padding: 0; align-items: flex-end; height: 148px;">
+            Have you tried our container offer?
+          </p>
+                </div>
+            </div>
+          <div class="Container-offer-buttons">
+            <button class="btn-try-free" id="Try-free-offer-btn" style="padding-top: 4px;">Try for free!</button>
+          </div>
+        </div>
+      </div>
+      <div class="Footer">
+        <div class="Address">
+            <div class="Address-inner" style="width: 147px;">
+          <div class="City">
+            <div class="Location">
+          <svg width="42" height="42" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M23.5 27.3802C27.7281 27.3802 31.1666 23.9417 31.1666 19.7135C31.1666 15.4854 27.7281 12.0469 23.5 12.0469C19.2718 12.0469 15.8333 15.4854 15.8333 19.7135C15.8333 23.9417 19.2718 27.3802 23.5 27.3802ZM23.5 15.8802C25.6141 15.8802 27.3333 17.5995 27.3333 19.7135C27.3333 21.8276 25.6141 23.5469 23.5 23.5469C21.3859 23.5469 19.6666 21.8276 19.6666 19.7135C19.6666 17.5995 21.3859 15.8802 23.5 15.8802Z"
+              fill="white"></path>
+            <path
+              d="M22.3884 42.357C22.7128 42.5886 23.1014 42.7132 23.5001 42.7132C23.8987 42.7132 24.2873 42.5886 24.6117 42.357C25.1944 41.9449 38.889 32.0568 38.8334 19.7135C38.8334 11.259 31.9545 4.38013 23.5001 4.38013C15.0457 4.38013 8.16673 11.259 8.16673 19.7039C8.11115 32.0568 21.8057 41.9449 22.3884 42.357ZM23.5001 8.21346C29.8423 8.21346 35.0001 13.3712 35.0001 19.723C35.0403 28.2292 26.5897 35.8671 23.5001 38.3722C20.4123 35.8652 11.9598 28.2254 12.0001 19.7135C12.0001 13.3712 17.1578 8.21346 23.5001 8.21346Z"
+              fill="white"></path>
+          </svg>
+          </div>
+          <p style="height: 26px">Guangzhou, China</p>
+          </div>
+          <div class="Phone">
+            <div class="Phone-Pic">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23.8334 1.50513H12.1667C9.74585 1.50513 7.79169 3.45929 7.79169 5.88013V29.2135C7.79169 31.6343 9.74585 33.5885 12.1667 33.5885H23.8334C26.2542 33.5885 28.2084 31.6343 28.2084 29.2135V5.88013C28.2084 3.45929 26.2542 1.50513 23.8334 1.50513ZM20.9167 30.6718H15.0834V29.2135H20.9167V30.6718ZM25.6563 26.2968H10.3438V5.88013H25.6563V26.2968Z"
+                fill="white"></path>
+            </svg>
+            </div>
+            <p style="font-size: 16px; height: 26px;"> 1885265612</p>
+          </div>
+          <div class="Social">
+              
+        <div class="Social-svg-1" style="width: 58px;">
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-lg-4">
+              <path d="M37.645 10.7256C36.4202 11.2539 35.0873 11.6342 33.7144 11.7823C35.1398 10.9355 36.2072 9.59764 36.7164 8.01982C35.3788 8.81549 33.9136 9.37343 32.3855 9.66889C31.7469 8.98615 30.9745 8.44225 30.1165 8.07108C29.2585 7.69991 28.3332 7.50943 27.3983 7.51149C23.6159 7.51149 20.5739 10.5775 20.5739 14.3399C20.5739 14.8683 20.6379 15.3966 20.742 15.9049C15.0783 15.6087 10.027 12.903 6.66887 8.7603C6.05697 9.80544 5.73632 10.9955 5.74026 12.2065C5.74026 14.5761 6.94505 16.6654 8.78224 17.8942C7.69955 17.8516 6.64222 17.554 5.69624 17.0257V17.1097C5.69624 20.4279 8.04176 23.1777 11.1678 23.8101C10.5808 23.9625 9.97704 24.0405 9.37062 24.0422C8.92633 24.0422 8.50606 23.9982 8.08178 23.9382C8.94634 26.6439 11.464 28.6092 14.4619 28.6732C12.1164 30.5104 9.17849 31.5911 5.98843 31.5911C5.41605 31.5911 4.88771 31.5711 4.33936 31.5071C7.36532 33.4483 10.9556 34.569 14.8222 34.569C27.3743 34.569 34.2428 24.1703 34.2428 15.1444C34.2428 14.8483 34.2428 14.5521 34.2227 14.2559C35.5516 13.2832 36.7164 12.0785 37.645 10.7256Z"
+                fill="white"></path>
+            </svg>
+        </div>
+        <div class="Social-svg-2" style="width: 58px;">
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-3">
+              <path
+                d="M35.7103 5.02979H6.25117C5.54271 5.02979 4.97034 5.60216 4.97034 6.31062V35.7697C4.97034 36.4782 5.54271 37.0506 6.25117 37.0506H35.7103C36.4187 37.0506 36.9911 36.4782 36.9911 35.7697V6.31062C36.9911 5.60216 36.4187 5.02979 35.7103 5.02979ZM32.0119 14.3758H29.4542C27.4489 14.3758 27.0607 15.3285 27.0607 16.7294V19.8154H31.8478L31.2234 24.6465H27.0607V37.0506H22.0694V24.6505H17.8947V19.8154H22.0694V16.2531C22.0694 12.1184 24.5951 9.86492 28.2855 9.86492C30.0546 9.86492 31.5716 9.99701 32.0159 10.057V14.3758H32.0119Z"
+                fill="white"></path>
+            </svg>
+        </div>
+        <div class="Social-svg-3">
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-3">
+              <path
+                d="M35.6981 5.02979H6.23902C5.53056 5.02979 4.95819 5.60216 4.95819 6.31062V35.7697C4.95819 36.4782 5.53056 37.0506 6.23902 37.0506H35.6981C36.4066 37.0506 36.979 36.4782 36.979 35.7697V6.31062C36.979 5.60216 36.4066 5.02979 35.6981 5.02979ZM14.4564 32.3155H9.70527V17.0336H14.4564V32.3155ZM12.0828 14.9442C11.5382 14.9442 11.0057 14.7827 10.5529 14.4801C10.1 14.1775 9.74707 13.7474 9.53865 13.2443C9.33022 12.7411 9.27568 12.1874 9.38194 11.6532C9.4882 11.119 9.75047 10.6283 10.1356 10.2432C10.5207 9.85809 11.0114 9.59581 11.5456 9.48956C12.0798 9.3833 12.6335 9.43784 13.1366 9.64626C13.6398 9.85469 14.0699 10.2077 14.3725 10.6605C14.6751 11.1134 14.8366 11.6458 14.8366 12.1904C14.8326 13.7114 13.5998 14.9442 12.0828 14.9442ZM32.2439 32.3155H27.4968V24.8827C27.4968 23.1095 27.4648 20.832 25.0272 20.832C22.5576 20.832 22.1774 22.7613 22.1774 24.7546V32.3155H17.4343V17.0336H21.9892V19.1229H22.0533C22.6857 17.9222 24.2347 16.6533 26.5482 16.6533C31.3593 16.6533 32.2439 19.8194 32.2439 23.9341V32.3155Z"
+                fill="white"></path>
+            </svg>
+        </div>
+          </div>
+        
+        </div>
+    </div>
+    <div class="Footer-main-menu">
+        <div class="Footer-menu">
+          <p style="font-weight: 400; line-height: 53px; font-size: 20px;">the basic</p>
+          <p style="line-height: 25px;">Homepage</p>
+          <p style="line-height: 24px;">the product</p>
+          <p style="line-height: 24.5px;">Around</p>
+          <p>Call</p>
+        </div>
+        <div class="Footer-second-menu">
+          <p style="font-weight: 400; line-height: 53px; font-size: 20px;">Resources</p>
+          <p style="line-height: 25px;">free catalog</p>
+          <p style="line-height: 24px;">Blog</p>
+          <p style="line-height: 24.5px;">Request</p>
+          <p>Updates</p>
+        </div>
+    </div>
+        <div class="Footer-logo">
+            <div class="Footer-logo-inner-div">
+          <img src="/Pictures/Logo1.png" alt="Logo" style="width: 300px; height: 94.3px; vertical-align: middle;"/>
+        </div>
+        </div>
+      </div>
+      <div class="Copyright">
+        <p>Copyright © 2020 Kirke</p>
+      </div>
+  </body>
+</html>
